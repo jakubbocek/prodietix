@@ -1,0 +1,12 @@
+{
+    "name": "template",
+    "dependencies": {
+        "jquery": ">=1.10 <2.0",
+        "bootstrap": "3.*",
+        "respond": "master",
+        "lazyImage": "https://github.com/ArtFocus/lazyImage.git#~1.0",
+        "easydropdown": "https://github.com/patrickkunka/easydropdown.git",
+        "icheck": "https://github.com/fronteed/iCheck.git",
+        "bxslider-4": "~4.2"
+    }
+}

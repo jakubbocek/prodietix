@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'gotham-light';
+	src: url('Gotham-Light_gdi.eot');
+	src: url('Gotham-Light_gdi.eot?#iefix') format('embedded-opentype'),
+	url('Gotham-Light_gdi.woff') format('woff'),
+	url('Gotham-Light_gdi.ttf') format('truetype'),
+	url('Gotham-Light_gdi.otf') format('opentype'),
+	url('Gotham-Light_gdi.svg#AvenirLTCE-Roman') format('svg'),
+	url("Gotham-Light_gdi.eot");
+	font-weight: normal;
+	font-style: normal;
+}

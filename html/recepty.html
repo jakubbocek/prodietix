@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<title>Prodietix.cz - Francouzská proteinová dieta</title>
+
+	<!-- metas -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+	<!-- stylesheets -->
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,latin-ext' rel='stylesheet'
+		  type='text/css'>
+	<link rel="stylesheet" href="project/css/project.css">
+
+	<!-- icons -->
+	<link rel="shortcut icon" href="project/favicon.ico">
+
+	<!-- javascript -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			custom: {
+				families: ["gotham-light", "gotham-medium"],
+				urls: ["project/fonts/gotham/gotham-light/Gotham-Light.css", "project/fonts/gotham/gotham-medium/Gotham-Medium.css"]
+			}
+		});
+	</script>
+
+	<script src="components/bower/jquery/dist/jquery.min.js"></script>
+	<script src="components/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="components/bower/lazyImage/lazyImage.js"></script>
+
+	<script src="components/bower/easydropdown/jquery.easydropdown.min.js"></script>
+	<script src="components/bower/icheck/icheck.min.js"></script>
+	<script src="components/custom/jquery-popupmenu/jquery.popupmenu.js"></script>
+	<script src="artcms/js/base.js"></script>
+
+	<script src="components/bower/bxslider-4/dist/jquery.bxslider.min.js"></script>
+
+	<script>
+		$(function () {
+			$(".bxslider").bxSlider({
+				"auto": true,
+				"mode": "fade",
+				"controls": false,
+				"pager": false,
+				"speed": 1400
+			});
+		});
+	</script>
+
+	<script>
+		$(function () {
+			new LazyImage.LazyImage('[data-src], [data-srcset]');
+		});
+
+		$(function () {
+			$('.toggle-button').click(function(){
+				$(this).toggleClass('open');
+			});
+		});
+	</script>
+
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v2.3";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<!--[if lt IE 9]>
+	<script src="components/bower/respond/dest/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<header>
+
+	<div class="container" style="display: none">
+		<div class="alerts">
+			<div class="alert alert-info">
+				Flash zprávička
+			</div>
+			<div class="alert alert-danger">
+				Flash zprávička
+			</div>
+			<div class="alert alert-success">
+				Flash zprávička
+			</div>
+		</div>
+	</div>
+
+	<div class="first-line">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-4 col-sm-3 col-xs-4">
+					<a href="#">
+						<picture class="logo">
+							<source media="(min-width: 1200px)" srcset="project/images/logo-lg.png">
+							<source media="(min-width: 992px)" srcset="project/images/logo.png">
+							<source media="(max-width: 767px)" srcset="project/images/logo-sm.png">
+							<img src="project/images/logo.png" alt="">
+						</picture>
+					</a>
+				</div>
+
+				<div class="popup-toggle visible-xs">
+				<span class="toggle-button" data-toggle="collapse" data-target="#popupmenu">
+					<a href="#" class="menu-title">Menu</a>
+				</span>
+
+					<a href="#" class="header-cart-icon">
+						<span class="count">13</span>
+					</a>
+
+					<span class="login-button" data-toggle="collapse" data-target="#login-button"></span>
+
+					<ul id="login-button" class="login-collapse collapse">
+						<li><a class="sign-in" href="#">Přihlásit se</a></li>
+						<li><a class="register" href="#">Registrovat se</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-7 col-md-8 col-sm-9 hidden-xs">
+					<div class="row">
+						<div class="col-md-7 col-sm-6 ">
+							<div class="header-contact">
+								<p>
+								<span class="phone">
+									<span class="">+420 604 42 47 44</span>
+								</span>
+
+								<span class="email">
+									<a href="#" class="">info@prodietix.cz</a>
+								</span>
+								</p>
+							</div>
+						</div>
+
+						<div class="col-md-5 col-sm-6">
+							<div class="login text-right">
+								<a class="sign-in" href="#">Přihlásit se</a> <a class="register" href="#">Registrace</a>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9">
+					<ul id="popupmenu" class="popupmenu collapse">
+						<li><a href="#">Úvod</a></li>
+						<li ><a href="#">O proteinové dietě</a>
+							<ul>
+								<li>
+									<a href="#">Co je to proteinová dieta?</a>
+								</li>
+								<li>
+									<a href="#">Ketóza</a>
+								</li>
+								<li>
+									<a href="#">Proteinová jídla</a>
+								</li>
+								<li>
+
+							</ul>
+						</li>
+						<li><a href="#">Recepty</a></li>
+						<li><a href="#">Novinky</a></li>
+						<li><a href="#">Naši zákazníci</a></li>
+						<li><a href="#">Poradna</a></li>
+						<li class="active"><a href="#">E-shop</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3 padding-left-cart hidden-xs">
+					<div class="cart" >
+						<div class="cart-icon"></div>
+						<a href="#" class="link"></a>
+						<span class="right hidden-sm">
+							Košík: <span class="">3 546</span> Kč
+						</span>
+							<span class="right">
+								Položek: <span class="">12</span>
+							</span>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</nav>
+</header>
+
+<main>
+	<div class="breadcrumb-bg">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li style="display: none"><a href="#"></a></li>
+                 <li class="active">Recepty</li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-4">
+				<aside>
+					<div class="search margin-top-none">
+						<form action="">
+							<input type="text" placeholder="Hledat zboží"/>
+							<input type="submit" value=" "/>
+						</form>
+					</div>
+					<div class="clearfix"></div>
+
+					<div class="submenu">
+						<ul>
+
+							
+							<li><a href="#">Recept produktu A</a></li>
+							<li><a href="#">Recept produktu B</a></li>
+							<li><a href="#">Recept produktu C</a></li>
+							<li class="active"><a href="#">Recept produktu D</a></li>
+							<li><a href="#">Recept produktu D</a></li>
+							<li><a href="#">Recept produktu E</a></li>
+						</ul>
+					</div>
+
+					<div class="banner-aside">
+						<a href="#">
+							<img src="project/images/aside-banner.jpg" class="img-responsive hidden-xs" alt=""/>
+						</a>
+
+						<div class="banner-xs visible-xs">
+							<a href="#" class="link"></a>
+							<div>
+								<p>
+									Doprava zdarma nad xxxx Kč
+								</p>
+
+								<p>
+									<strong>Dodání do 48 hod.</strong>
+								</p>
+							</div>
+						</div>
+					</div>
+				</aside>
+			</div>
+			<div class="col-md-9 col-sm-8">
+				
+					
+					<div class="recepty">
+						<div class="light-bg">
+							<h1>Nadpis receptu</h1>
+						<div class="news-box">
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<h2><a href="#">Nadpis novinky</a></h2>
+								<div class="popis">
+									<p>
+										Mamuti její trápí mi rezigoval tamního přinášíme typ stránky pásu milióny.
+										Řekne z země prostředkem kužele. Ne starověké podobné ho ostrovní jsem líně
+										výrazný převzalo. Loupežné první až či věčně nahé chemickým, například v ráno
+										zachráněny zajímá 1 té hodnot kavárna.
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-5 col-ms-5">
+								<a href="#"><img src="project/images/news-photo.jpg?266x200-exact" class="img-responsive photo pull-right" alt=""></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<div class="row">
+									<div class="col-sm-6 dolu">
+										<div class="fb-like fb_iframe_widget" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 133px; height: 20px;"><iframe name="f2eda5d6b" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2Fjb3BUxkAISL.js%3Fversion%3D41%23cb%3Df33c9e04bc%26domain%3Dhtml.artfocus.biz%26origin%3Dhttp%253A%252F%252Fhtml.artfocus.biz%252Ff12d045ac8%26relation%3Dparent.parent&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 133px; height: 20px;" class=""></iframe></span></div>
+									</div>
+									<div class="col-sm-6">
+										<a href="#" class="btn-novinky pull-right">Číst více</a>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+					<div class="news-box">
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<h2><a href="#">Nadpis novinky</a></h2>
+								<div class="popis">
+									<p>
+										Mamuti její trápí mi rezigoval tamního přinášíme typ stránky pásu milióny.
+										Řekne z země prostředkem kužele. Ne starověké podobné ho ostrovní jsem líně
+										výrazný převzalo. Loupežné první až či věčně nahé chemickým, například v ráno
+										zachráněny zajímá 1 té hodnot kavárna.
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-5 col-ms-5">
+								<a href="#"><img src="project/images/news-photo.jpg?266x200-exact" class="img-responsive photo pull-right" alt=""></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<div class="row">
+									<div class="col-sm-6 dolu">
+										<div class="fb-like fb_iframe_widget" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 133px; height: 20px;"><iframe name="f2eda5d6b" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2Fjb3BUxkAISL.js%3Fversion%3D41%23cb%3Df33c9e04bc%26domain%3Dhtml.artfocus.biz%26origin%3Dhttp%253A%252F%252Fhtml.artfocus.biz%252Ff12d045ac8%26relation%3Dparent.parent&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 133px; height: 20px;" class=""></iframe></span></div>
+									</div>
+									<div class="col-sm-6">
+										<a href="#" class="btn-novinky pull-right">Číst více</a>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+						<div class="news-box">
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<h2><a href="#">Nadpis novinky</a></h2>
+								<div class="popis">
+									<p>
+										Mamuti její trápí mi rezigoval tamního přinášíme typ stránky pásu milióny.
+										Řekne z země prostředkem kužele. Ne starověké podobné ho ostrovní jsem líně
+										výrazný převzalo. Loupežné první až či věčně nahé chemickým, například v ráno
+										zachráněny zajímá 1 té hodnot kavárna.
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-5 col-ms-5">
+								<a href="#"><img src="project/images/news-photo.jpg?266x200-exact" class="img-responsive photo pull-right" alt=""></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<div class="row">
+									<div class="col-sm-6 dolu">
+										<div class="fb-like fb_iframe_widget" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 133px; height: 20px;"><iframe name="f2eda5d6b" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2Fjb3BUxkAISL.js%3Fversion%3D41%23cb%3Df33c9e04bc%26domain%3Dhtml.artfocus.biz%26origin%3Dhttp%253A%252F%252Fhtml.artfocus.biz%252Ff12d045ac8%26relation%3Dparent.parent&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 133px; height: 20px;" class=""></iframe></span></div>
+									</div>
+									<div class="col-sm-6">
+										<a href="#" class="btn-novinky pull-right">Číst více</a>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+						<div class="news-box">
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<h2><a href="#">Nadpis novinky</a></h2>
+								<div class="popis">
+									<p>
+										Mamuti její trápí mi rezigoval tamního přinášíme typ stránky pásu milióny.
+										Řekne z země prostředkem kužele. Ne starověké podobné ho ostrovní jsem líně
+										výrazný převzalo. Loupežné první až či věčně nahé chemickým, například v ráno
+										zachráněny zajímá 1 té hodnot kavárna.
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-5 col-ms-5">
+								<a href="#"><img src="project/images/news-photo.jpg?266x200-exact" class="img-responsive photo pull-right" alt=""></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<div class="row">
+									<div class="col-sm-6 dolu">
+										<div class="fb-like fb_iframe_widget" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 133px; height: 20px;"><iframe name="f2eda5d6b" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2Fjb3BUxkAISL.js%3Fversion%3D41%23cb%3Df33c9e04bc%26domain%3Dhtml.artfocus.biz%26origin%3Dhttp%253A%252F%252Fhtml.artfocus.biz%252Ff12d045ac8%26relation%3Dparent.parent&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 133px; height: 20px;" class=""></iframe></span></div>
+									</div>
+									<div class="col-sm-6">
+										<a href="#" class="btn-novinky pull-right">Číst více</a>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+						<div class="news-box">
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<h2><a href="#">Nadpis novinky</a></h2>
+								<div class="popis">
+									<p>
+										Mamuti její trápí mi rezigoval tamního přinášíme typ stránky pásu milióny.
+										Řekne z země prostředkem kužele. Ne starověké podobné ho ostrovní jsem líně
+										výrazný převzalo. Loupežné první až či věčně nahé chemickým, například v ráno
+										zachráněny zajímá 1 té hodnot kavárna.
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-5 col-ms-5">
+								<a href="#"><img src="project/images/news-photo.jpg?266x200-exact" class="img-responsive photo pull-right" alt=""></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<div class="row">
+									<div class="col-sm-6 dolu">
+										<div class="fb-like fb_iframe_widget" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 133px; height: 20px;"><iframe name="f2eda5d6b" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2Fjb3BUxkAISL.js%3Fversion%3D41%23cb%3Df33c9e04bc%26domain%3Dhtml.artfocus.biz%26origin%3Dhttp%253A%252F%252Fhtml.artfocus.biz%252Ff12d045ac8%26relation%3Dparent.parent&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 133px; height: 20px;" class=""></iframe></span></div>
+									</div>
+									<div class="col-sm-6">
+										<a href="#" class="btn-novinky pull-right">Číst více</a>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+						<div class="news-box">
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<h2><a href="#">Nadpis novinky</a></h2>
+								<div class="popis">
+									<p>
+										Mamuti její trápí mi rezigoval tamního přinášíme typ stránky pásu milióny.
+										Řekne z země prostředkem kužele. Ne starověké podobné ho ostrovní jsem líně
+										výrazný převzalo. Loupežné první až či věčně nahé chemickým, například v ráno
+										zachráněny zajímá 1 té hodnot kavárna.
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-5 col-ms-5">
+								<a href="#"><img src="project/images/news-photo.jpg?266x200-exact" class="img-responsive photo pull-right" alt=""></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<div class="row">
+									<div class="col-sm-6 dolu">
+										<div class="fb-like fb_iframe_widget" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 133px; height: 20px;"><iframe name="f2eda5d6b" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2Fjb3BUxkAISL.js%3Fversion%3D41%23cb%3Df33c9e04bc%26domain%3Dhtml.artfocus.biz%26origin%3Dhttp%253A%252F%252Fhtml.artfocus.biz%252Ff12d045ac8%26relation%3Dparent.parent&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 133px; height: 20px;" class=""></iframe></span></div>
+									</div>
+									<div class="col-sm-6">
+										<a href="#" class="btn-novinky pull-right">Číst více</a>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+						<div class="news-box">
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<h2><a href="#">Nadpis novinky</a></h2>
+								<div class="popis">
+									<p>
+										Mamuti její trápí mi rezigoval tamního přinášíme typ stránky pásu milióny.
+										Řekne z země prostředkem kužele. Ne starověké podobné ho ostrovní jsem líně
+										výrazný převzalo. Loupežné první až či věčně nahé chemickým, například v ráno
+										zachráněny zajímá 1 té hodnot kavárna.
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-5 col-ms-5">
+								<a href="#"><img src="project/images/news-photo.jpg?266x200-exact" class="img-responsive photo pull-right" alt=""></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<div class="row">
+									<div class="col-sm-6 dolu">
+										<div class="fb-like fb_iframe_widget" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 133px; height: 20px;"><iframe name="f2eda5d6b" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2Fjb3BUxkAISL.js%3Fversion%3D41%23cb%3Df33c9e04bc%26domain%3Dhtml.artfocus.biz%26origin%3Dhttp%253A%252F%252Fhtml.artfocus.biz%252Ff12d045ac8%26relation%3Dparent.parent&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 133px; height: 20px;" class=""></iframe></span></div>
+									</div>
+									<div class="col-sm-6">
+										<a href="#" class="btn-novinky pull-right">Číst více</a>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+						<div class="news-box">
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<h2><a href="#">Nadpis novinky</a></h2>
+								<div class="popis">
+									<p>
+										Mamuti její trápí mi rezigoval tamního přinášíme typ stránky pásu milióny.
+										Řekne z země prostředkem kužele. Ne starověké podobné ho ostrovní jsem líně
+										výrazný převzalo. Loupežné první až či věčně nahé chemickým, například v ráno
+										zachráněny zajímá 1 té hodnot kavárna.
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-5 col-ms-5">
+								<a href="#"><img src="project/images/news-photo.jpg?266x200-exact" class="img-responsive photo pull-right" alt=""></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<div class="row">
+									<div class="col-sm-6 dolu">
+										<div class="fb-like fb_iframe_widget" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 133px; height: 20px;"><iframe name="f2eda5d6b" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2Fjb3BUxkAISL.js%3Fversion%3D41%23cb%3Df33c9e04bc%26domain%3Dhtml.artfocus.biz%26origin%3Dhttp%253A%252F%252Fhtml.artfocus.biz%252Ff12d045ac8%26relation%3Dparent.parent&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 133px; height: 20px;" class=""></iframe></span></div>
+									</div>
+									<div class="col-sm-6">
+										<a href="#" class="btn-novinky pull-right">Číst více</a>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+						<div class="news-box">
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<h2><a href="#">Nadpis novinky</a></h2>
+								<div class="popis">
+									<p>
+										Mamuti její trápí mi rezigoval tamního přinášíme typ stránky pásu milióny.
+										Řekne z země prostředkem kužele. Ne starověké podobné ho ostrovní jsem líně
+										výrazný převzalo. Loupežné první až či věčně nahé chemickým, například v ráno
+										zachráněny zajímá 1 té hodnot kavárna.
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-5 col-ms-5">
+								<a href="#"><img src="project/images/news-photo.jpg?266x200-exact" class="img-responsive photo pull-right" alt=""></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-7 col-ms-7">
+								<div class="row">
+									<div class="col-sm-6 dolu">
+										<div class="fb-like fb_iframe_widget" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 133px; height: 20px;"><iframe name="f2eda5d6b" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.3/plugins/like.php?action=like&amp;app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2Fjb3BUxkAISL.js%3Fversion%3D41%23cb%3Df33c9e04bc%26domain%3Dhtml.artfocus.biz%26origin%3Dhttp%253A%252F%252Fhtml.artfocus.biz%252Ff12d045ac8%26relation%3Dparent.parent&amp;container_width=300&amp;href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button&amp;locale=cs_CZ&amp;sdk=joey&amp;share=true&amp;show_faces=true" style="border: none; visibility: visible; width: 133px; height: 20px;" class=""></iframe></span></div>
+									</div>
+									<div class="col-sm-6">
+										<a href="#" class="btn-novinky pull-right">Číst více</a>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="text-center">
+									<div class="navigace-two">
+									<ul>
+										<li><a href="#">
+												<img src="project/images/sipka_vlevo.png">
+											</a>
+										</li>
+										<li><a href="#" class="active">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+										<li>
+											<a href="#">
+												<img src="project/images/sipka.png" >
+											</a>
+										</li>
+										<li><a href="#">14</a></li>
+										<li>
+											<a href="#">
+												<img src="project/images/sipka_vpravo.png">
+											</a>
+										</li>
+									</ul>
+								</div>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+</main>
+
+<footer>
+	<div class="trust-us">
+		<h2 class="trust-us-title">nám můžete důvěřovat</h2>
+
+		<a href="#" class="trust-us-item">
+			<img src="project/images/iso-logo.png" alt="">
+		</a>
+		<a href="#" class="trust-us-item">
+			<img src="project/images/ppl-logo.png" alt="">
+		</a>
+		<a href="#" class="trust-us-item">
+			<img src="project/images/heureka-logo.png" alt="">
+		</a>
+		<a href="#" class="trust-us-item">
+			<img src="project/images/visa-logo.png" alt="">
+		</a>
+		<a href="#" class="trust-us-item">
+			<img src="project/images/mastercard-logo.png" alt="">
+		</a>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-ms-6">
+				<h6>O projektu</h6>
+
+				<ul>
+					<li><a href="#">O Prodietix dietě</a></li>
+					<li><a href="#">Online kalkulačka</a></li>
+					<li><a href="#">Naši zákazníci</a></li>
+					<li><a href="#">Poradna</a></li>
+					<li><a href="#">Kontakt</a></li>
+				</ul>
+			</div>
+
+			<div class="col-md-3 col-sm-3 col-ms-6">
+				<h6>O nákupu</h6>
+
+				<ul>
+					<li><a href="#">Sestavování jídelníčku</a></li>
+					<li><a href="#">Vrátíme peníze za příběh</a></li>
+					<li><a href="#">Garance spokojenosti</a></li>
+					<li><a href="#">Možnosti dopravy</a></li>
+					<li><a href="#">Možnosti platby</a></li>
+					<li><a href="#">Obchodní podmínky</a></li>
+				</ul>
+			</div>
+
+			<div class="clearfix visible-xs"></div>
+
+			<div class="col-md-offset-1 col-md-5 col-sm-6 col-ms-12 ">
+				<div class="footer-facebook text-right hidden-xs">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprodietix%2F&tabs&width=340&height=128&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="128" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				</div>
+				<div class="footer-facebook  visible-xs">
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprodietix%2F&tabs&width=340&height=128&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="128" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="posudek">
+						Informace na těchto stránkách nenahrazují v žádném případě odborný lékařský posudek <br>
+						Výsledky Prodietix diety se mohou lišit a jsou závislé na individuálních dispozicích zákazníků.
+					</p>
+				</div>
+				<div class="col-md-6">
+
+					<p>
+						© Prodietix.cz 2016
+					</p>
+				</div>
+				<div class="col-md-6 min-md-text-right">
+					<p>
+						Created by <a href="http://www.artweby.cz" title="Tvorba webových stránek a e-shopů">ArtWeby</a> | Powered by <a href="http://www.artfocus.cz/tvorba-www-stranek/vytvoreni-webovych-stranek-webdesign.html" title="Redakční systém ArtCMS">ArtCMS </a>
+						| Design by <a href="#">Zlatý:digi</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

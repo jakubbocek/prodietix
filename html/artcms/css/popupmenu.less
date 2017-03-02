@@ -1,0 +1,60 @@
+@import "mixins";
+
+ul.popupmenu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	li {
+		display: block;
+		position: relative;
+		white-space: nowrap;
+
+		a {
+			display: block;
+		}
+
+		ul, &:hover ul, &.active ul {
+			display: none;
+			text-align: left;
+			z-index: 500;
+			padding: 20px 15px 15px;
+
+			li {
+				display: block;
+
+				a {
+					display: block;
+					padding: 5px 10px;
+				}
+			}
+
+			@media @min-sm {
+				position: absolute;
+			}
+		}
+
+		&.active ul {
+			display: block;
+
+			@media @min-sm {
+				display: none;
+			}
+		}
+
+		@media @min-sm {
+			display: inline-block;
+
+			a {
+				display: inline-block;
+			}
+		}
+	}
+
+	@media @min-sm {
+		&.collapse {
+			display: block;
+			visibility: visible;
+			height: auto !important; // Bootstrap 3 collapse
+		}
+	}
+}

@@ -1,0 +1,5 @@
+/.idea
+node_modules/*
+index.php
+index.txt
+README.md

@@ -1,0 +1,1414 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <title>Prodietix.cz - Francouzská proteinová dieta</title>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <!-- stylesheets -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,latin-ext' rel='stylesheet'
+          type='text/css'>
+    <link rel="stylesheet" href="project/css/project.css">
+
+    <!-- icons -->
+    <link rel="shortcut icon" href="project/favicon.ico">
+
+    <!-- javascript -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+        WebFont.load({
+            custom: {
+                families: ["gotham-light", "gotham-medium"],
+                urls: ["project/fonts/gotham/gotham-light/Gotham-Light.css", "project/fonts/gotham/gotham-medium/Gotham-Medium.css"]
+            }
+        });
+    </script>
+
+    <script src="components/bower/jquery/dist/jquery.min.js"></script>
+    <script src="components/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="components/bower/lazyImage/lazyImage.js"></script>
+
+    <script src="components/bower/easydropdown/jquery.easydropdown.min.js"></script>
+    <script src="components/bower/icheck/icheck.min.js"></script>
+    <script src="components/custom/jquery-popupmenu/jquery.popupmenu.js"></script>
+    <script src="artcms/js/base.js"></script>
+
+    <script src="components/bower/bxslider-4/dist/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(function () {
+            $(".bxslider").bxSlider({
+                "auto": true,
+                "mode": "fade",
+                "controls": false,
+                "pager": false,
+                "speed": 1400
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            new LazyImage.LazyImage('[data-src], [data-srcset]');
+        });
+
+        $(function () {
+            $('.toggle-button').click(function(){
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v2.3";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="components/bower/respond/dest/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="http://localhost:35729/livereload.js"></script>
+</head>
+<body>
+
+<header>
+
+    <div class="container" style="display: none">
+        <div class="alerts">
+            <div class="alert alert-info">
+                Flash zprávička
+            </div>
+            <div class="alert alert-danger">
+                Flash zprávička
+            </div>
+            <div class="alert alert-success">
+                Flash zprávička
+            </div>
+        </div>
+    </div>
+
+    <div class="first-line">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-4 col-sm-3 col-xs-4">
+                    <a href="#">
+                        <picture class="logo">
+                            <source media="(min-width: 1200px)" srcset="project/images/logo-lg.png">
+                            <source media="(min-width: 992px)" srcset="project/images/logo.png">
+                            <source media="(max-width: 767px)" srcset="project/images/logo-sm.png">
+                            <img src="project/images/logo.png" alt="">
+                        </picture>
+                    </a>
+                </div>
+
+                <div class="popup-toggle visible-xs">
+				<span class="toggle-button" data-toggle="collapse" data-target="#popupmenu">
+					<a href="#" class="menu-title">Menu</a>
+				</span>
+
+                    <a href="#" class="header-cart-icon">
+                        <span class="count">13</span>
+                    </a>
+
+                    <span class="login-button" data-toggle="collapse" data-target="#login-button"></span>
+
+                    <ul id="login-button" class="login-collapse collapse">
+                        <li><a class="sign-in" href="#">Přihlásit se</a></li>
+                        <li><a class="register" href="#">Registrovat se</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-7 col-md-8 col-sm-9 hidden-xs">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-6 ">
+                            <div class="header-contact">
+                                <p>
+								<span class="phone">
+									<span class="">+420 604 42 47 44</span>
+								</span>
+
+								<span class="email">
+									<a href="#" class="">info@prodietix.cz</a>
+								</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 col-sm-6">
+                            <div class="login text-right">
+                                <a class="sign-in" href="#">Přihlásit se</a> <a class="register" href="#">Registrace</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <ul id="popupmenu" class="popupmenu collapse">
+                        <li><a href="#">Úvod</a></li>
+                        <li ><a href="#">O proteinové dietě</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Co je to proteinová dieta?</a>
+                                </li>
+                                <li>
+                                    <a href="#">Ketóza</a>
+                                </li>
+                                <li>
+                                    <a href="#">Proteinová jídla</a>
+                                </li>
+                                <li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Recepty</a></li>
+                        <li><a href="#">Novinky</a></li>
+                        <li><a href="#">Naši zákazníci</a></li>
+                        <li><a href="#">Poradna</a></li>
+                        <li class="active"><a href="#">E-shop</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 padding-left-cart hidden-xs">
+                    <div class="cart" >
+                        <div class="cart-icon"></div>
+                        <a href="#" class="link"></a>
+						<span class="right hidden-sm">
+							Košík: <span class="">13 546</span> Kč
+						</span>
+							<span class="right">
+								Položek: <span class="">12</span>
+							</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="#"><img src="project/images/banner-1.jpg" class="img-responsive hidden-xs" alt=""/></a>
+
+                    <div class="banner-xs visible-xs">
+                        <a href="#" class="link"></a>
+                        <div>
+                            <p class="text-uppercase">
+                                <strong>online kalkulačka</strong>
+                            </p>
+                            <p>Najděte pro Vás vhodnou podobu Prodietix diety!</p>
+
+                            <p class="text-uppercase">
+                                Spočítat nyní &gt;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#"><img src="project/images/banner-2.jpg" class="img-responsive hidden-xs" alt=""/></a>
+
+                    <div class="banner-xs visible-xs">
+                        <a href="#" class="link"></a>
+                        <div>
+                            <p class="text-uppercase">
+                                <strong>
+                                    jídelníček
+                                    na míru
+                                </strong>
+                            </p>
+
+                            <p>
+                                Sestavte si svůj jídeliček sami dle
+                                vlastní chuti!
+                            </p>
+
+                            <p class="text-uppercase">
+                                jak na to?&gt;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <a href="#"><img src="project/images/banner-3.jpg" class="img-responsive hidden-xs" alt=""/></a>
+
+                    <div class="banner-xs visible-xs">
+                        <a href="#" class="link"></a>
+                        <div>
+                            <p class="text-uppercase">
+                                <strong>
+                                    garance
+                                    spokojenosti
+                                </strong>
+                            </p>
+                            <p>Nevyhovuje Vám naše dieta? Vrátíme Vám peníze!</p>
+
+                            <p class="text-uppercase">
+                                více info &gt;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+
+
+
+        <div class="row">
+            <div class="col-md-3 col-sm-4">
+                <aside>
+                    <div class="search">
+                        <form action="">
+                            <input type="text" placeholder="Vyhledat zboží"/>
+                            <input type="submit" value=" "/>
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div class="submenu">
+                        <ul>
+                            <li class="active"><a href="#"><img src="project/images/zeny.png">Dietní programy pro ženy</a></li>
+                            <li class=""><a href="#"><img src="project/images/muzi.png">Dietní programy pro muže</a></li>
+                            <li class="">
+                                <a href="#"><img src="project/images/ochutnavky.png">Ochutnávky</a>
+                                <ul class="second-level hidden-xs">
+                                    <li><a href="#">Program 1+1+1 týden</a></li>
+                                    <li class="active"><a href="#">Program 3 x 14 dní</a></li>
+                                    <li><a href="#">Program 3 x 21 dní</a></li>
+                                    <li><a href="#">Program 3 x 28 dní</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="#"><img src="project/images/kremy.png">Krémy a pudinky</a></li>
+                            <li class=""><a href="#"><img src="project/images/smoothies.png">Smoothies a koktejly</a></li>
+                            <li><a href="#"><img src="project/images/teple-napoje.png">Teplé nápoje</a></li>
+                            <li><a href="#"><img src="project/images/coctail-icon.png">Studené nápoje</a></li>
+                            <li><a href="#"><img src="project/images/kolace.png">Koláče</a></li>
+                            <li><a href="#"><img src="project/images/palacinky.png">Palačinky</a></li>
+                            <li><a href="#"><img src="project/images/omelety.png">Omelety</a></li>
+                            <li><a href="#"><img src="project/images/polevky.png">Polévky</a></li>
+                            <li><a href="#"><img src="project/images/chleby.png">Chléb</a></li>
+                            <li><a href="#"><img src="project/images/krekry.png">Krekry</a></li>
+                            <li><a href="#"><img src="project/images/brambory.png">Šťouchané brambory</a></li>
+                            <li><a href="#"><img src="project/images/testoviny.png">Těstoviny a omáčky</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="banner-aside">
+                        <a href="#">
+                            <img src="project/images/aside-banner.jpg" class="img-responsive hidden-xs" alt=""/>
+                        </a>
+
+                        <div class="banner-xs visible-xs">
+                            <a href="#" class="link"></a>
+                            <div>
+                                <p class="text-uppercase">
+                                    <strong>Doprava zdarma </strong>
+                                </p>
+
+                                <p>
+                                    Pro objednávky
+                                    nad 2000 Kč
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-md-9 col-sm-8">
+                <h1 class="eshop-title">dietní programy pro ženy</h1>
+
+                <div class="program-box">
+                    <div class="program-box-heading">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Program PRODIETIX Z1</h2>
+                            </div>
+                            <div class="col-md-6 text-right hidden-xs">
+                                <div class="program-box-heading-kilos ">
+                                    <span class="number">-6</span>
+                                    <div>kg</div>
+                                </div>
+                                <p class="program-box-heading-redukce">Nižší váhové redukce do 6 kg</p>
+                                <p class="program-box-heading-vhodny">Vhodný pro ženy</p>
+                            </div>
+                            <div class="col-md-6  visible-xs">
+
+                                <p class="program-box-heading-redukce">Nižší váhové redukce do 6 kg</p>
+                                <p class="program-box-heading-vhodny">Vhodný pro ženy</p>
+
+                                <div class="program-box-heading-kilos ">
+                                    <span class="number">-6</span>
+                                    <div>kg</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div>
+                            <span class="program-box-icon program-box-icon-time">3 týdny</span>
+                            <span class="program-box-icon program-box-icon-porce">63 porcí</span>
+                            <span class="program-box-icon program-box-icon-dinning">4 jídla denně</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4  col-ms-6 col-sm-6 no-padding">
+                                <div class="phase-box">
+                                    <h4><a href="#">1. fáze Z1</a></h4>
+                                    <a href="#"><img src="project/images/product-photo.jpg#253x194" class="img-responsive" alt=""/></a>
+                                    <p class="phase-box-time">1 týden</p>
+                                    <div class="number-meals">
+                                        <div class="row">
+                                            <div class="col-md-7 col-sm-6">
+                                                <p class="meals"> 4 jídla denně</p>
+                                            </div>
+
+                                            <div class="col-md-5 col-sm-6 ">
+                                                <p class="porce">28 porcí</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-no-margin">
+                                        <div class="serving">
+                                            <div class="col-sm-6">
+                                                <p class="price">
+                                                    1 179 Kč
+                                                </p>
+                                                <p class="price-per-serving">
+                                                    57 Kč/porce
+                                                </p>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="#" class="red-btn">Koupit fázi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4  col-ms-6 col-sm-6 no-padding">
+                                <div class="phase-box">
+                                    <h4><a href="#">2. fáze Z1</a></h4>
+
+                                    <a href="#"><img src="project/images/product-photo.jpg#253x194" class="img-responsive" alt=""/></a>
+                                    <p class="phase-box-time">1 týden</p>
+                                    <div class="number-meals">
+                                        <div class="row">
+                                            <div class="col-md-7 col-sm-6">
+                                                <p class="meals"> 3 jídla denně</p>
+                                            </div>
+
+                                            <div class="col-md-5 col-sm-6">
+                                                <p class="porce">21 porcí</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-no-margin">
+                                        <div class="serving">
+                                            <div class="col-sm-6">
+                                                <p class="price">
+                                                    1 540 Kč
+                                                </p>
+                                                <p class="price-per-serving">
+                                                    55 Kč/porce
+                                                </p>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="#" class="red-btn">Koupit fázi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4  col-ms-12 col-sm-12 no-padding">
+                                <div class="phase-box no-border-right">
+
+                                    <h4><a href="#">3. fáze Z1</a></h4>
+
+                                    <a href="#"><img src="project/images/product-photo.jpg#253x194" class="img-responsive" alt=""/></a>
+                                    <p class="phase-box-time">1 týden</p>
+                                    <div class="number-meals">
+                                        <div class="row">
+                                            <div class="col-md-7 col-sm-6 ">
+                                                <p class="meals"> 2 jídla denně</p>
+                                            </div>
+
+                                            <div class="col-md-5 col-sm-6">
+                                                <p class="porce">14 porcí</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-no-margin">
+                                        <div class="serving">
+                                            <div class="col-sm-6">
+                                                <p class="price">
+                                                    826 Kč
+                                                </p>
+                                                <p class="price-per-serving">
+                                                    59 Kč/porce
+                                                </p>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="#" class="red-btn">Koupit fázi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buy-program">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <span class="complete-price">
+                                                Zvýhodněná cena <br>
+                                                celého programu:
+                                            </span>
+                                            <img src="project/images/program-image.png" alt="">
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p class="price">
+                                                <span>3 213 Kč</span> <br>
+                                                51 Kč/porce
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="#" class="red-btn">Koupit program</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-box">
+                    <div class="program-box-heading">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Program PRODIETIX Z1</h2>
+                            </div>
+                            <div class="col-md-6 text-right hidden-xs">
+                                <div class="program-box-heading-kilos ">
+                                    <span class="number">-10</span>
+                                    <div>kg</div>
+                                </div>
+                                <p class="program-box-heading-redukce">Nižší váhové redukce do 6 kg</p>
+                                <p class="program-box-heading-vhodny">Vhodný pro ženy</p>
+                            </div>
+                            <div class="col-md-6  visible-xs">
+
+                                <p class="program-box-heading-redukce">Nižší váhové redukce do 6 kg</p>
+                                <p class="program-box-heading-vhodny">Vhodný pro ženy</p>
+
+                                <div class="program-box-heading-kilos ">
+                                    <span class="number">-10</span>
+                                    <div>kg</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div>
+                            <span class="program-box-icon program-box-icon-time">3 týdny</span>
+                            <span class="program-box-icon program-box-icon-porce">63 porcí</span>
+                            <span class="program-box-icon program-box-icon-dinning">4 jídla denně</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4  col-ms-6 col-sm-6 no-padding">
+                                <div class="phase-box">
+                                    <h4><a href="#">1. fáze Z1</a></h4>
+
+                                    <a href="#"><img src="project/images/product-photo.jpg#253x194" class="img-responsive" alt=""/></a>
+                                    <p class="phase-box-time">1 týden</p>
+                                    <div class="number-meals">
+                                        <div class="row">
+                                            <div class="col-md-7 col-sm-6">
+                                                <p class="meals"> 4 jídla denně</p>
+                                            </div>
+
+                                            <div class="col-md-5 col-sm-6">
+                                                <p class="porce">28 porcí</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-no-margin">
+                                        <div class="serving">
+                                            <div class="col-sm-6">
+                                                <p class="price">
+                                                    1 179 Kč
+                                                </p>
+                                                <p class="price-per-serving">
+                                                    57 Kč/porce
+                                                </p>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="#" class="red-btn">Koupit fázi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4  col-ms-6 col-sm-6 no-padding">
+                                <div class="phase-box">
+                                    <h4><a href="#">2. fáze Z1</a></h4>
+
+                                    <a href="#"><img src="project/images/product-photo.jpg#253x194" class="img-responsive" alt=""/></a>
+                                    <p class="phase-box-time">1 týden</p>
+                                    <div class="number-meals">
+                                        <div class="row">
+                                            <div class="col-md-7 col-sm-6">
+                                                <p class="meals"> 3 jídla denně</p>
+                                            </div>
+
+                                            <div class="col-md-5 col-sm-6">
+                                                <p class="porce">21 porcí</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-no-margin">
+                                        <div class="serving">
+                                            <div class="col-sm-6">
+                                                <p class="price">
+                                                    1 540 Kč
+                                                </p>
+                                                <p class="price-per-serving">
+                                                    55 Kč/porce
+                                                </p>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="#" class="red-btn">Koupit fázi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4  col-ms-12 col-sm-12 no-padding">
+                                <div class="phase-box no-border-right">
+
+                                    <h4><a href="#">3. fáze Z1</a></h4>
+
+                                    <a href="#"><img src="project/images/product-photo.jpg#253x194" class="img-responsive" alt=""/></a>
+                                    <p class="phase-box-time">1 týden</p>
+                                    <div class="number-meals">
+                                        <div class="row">
+                                            <div class="col-md-7 col-sm-6 ">
+                                                <p class="meals"> 2 jídla denně</p>
+                                            </div>
+
+                                            <div class="col-md-5 col-sm-6">
+                                                <p class="porce">14 porcí</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-no-margin">
+                                        <div class="serving">
+                                            <div class="col-sm-6">
+                                                <p class="price">
+                                                    826 Kč
+                                                </p>
+                                                <p class="price-per-serving">
+                                                    59 Kč/porce
+                                                </p>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="#" class="red-btn">Koupit fázi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buy-program">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <span class="complete-price">
+                                                Zvýhodněná cena <br>
+                                                celého programu:
+                                            </span>
+                                            <img src="project/images/program-image.png" alt="">
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p class="price">
+                                                <span>3 213 Kč</span> <br>
+                                                51 Kč/porce
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="#" class="red-btn">Koupit program</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program-box">
+                    <div class="program-box-heading">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2>Program PRODIETIX Z1</h2>
+                            </div>
+                            <div class="col-md-6 text-right hidden-xs">
+                                <div class="program-box-heading-kilos ">
+                                    <span class="number">-15</span>
+                                    <div>kg</div>
+                                </div>
+                                <p class="program-box-heading-redukce">Nižší váhové redukce do 6 kg</p>
+                                <p class="program-box-heading-vhodny">Vhodný pro ženy</p>
+                            </div>
+                            <div class="col-md-6  visible-xs">
+
+                                <p class="program-box-heading-redukce">Nižší váhové redukce do 6 kg</p>
+                                <p class="program-box-heading-vhodny">Vhodný pro ženy</p>
+
+                                <div class="program-box-heading-kilos ">
+                                    <span class="number">-15</span>
+                                    <div>kg</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div>
+                            <span class="program-box-icon program-box-icon-time">3 týdny</span>
+                            <span class="program-box-icon program-box-icon-porce">63 porcí</span>
+                            <span class="program-box-icon program-box-icon-dinning">4 jídla denně</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4  col-ms-6 col-sm-6 no-padding">
+                                <div class="phase-box">
+                                    <h4><a href="#">1. fáze Z1</a></h4>
+
+                                    <a href="#"><img src="project/images/product-photo.jpg#253x194" class="img-responsive" alt=""/></a>
+                                    <p class="phase-box-time">1 týden</p>
+                                    <div class="number-meals">
+                                        <div class="row">
+                                            <div class="col-md-7 col-sm-6">
+                                                <p class="meals"> 4 jídla denně</p>
+                                            </div>
+
+                                            <div class="col-md-5 col-sm-6">
+                                                <p class="porce">28 porcí</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-no-margin">
+                                        <div class="serving">
+                                            <div class="col-sm-6">
+                                                <p class="price">
+                                                    1 179 Kč
+                                                </p>
+                                                <p class="price-per-serving">
+                                                    57 Kč/porce
+                                                </p>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="#" class="red-btn">Koupit fázi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4  col-ms-6 col-sm-6 no-padding">
+                                <div class="phase-box">
+                                    <h4><a href="#">2. fáze Z1</a></h4>
+
+                                    <a href="#"><img src="project/images/product-photo.jpg#253x194" class="img-responsive" alt=""/></a>
+                                    <p class="phase-box-time">1 týden</p>
+                                    <div class="number-meals">
+                                        <div class="row">
+                                            <div class="col-md-7 col-sm-6">
+                                                <p class="meals"> 3 jídla denně</p>
+                                            </div>
+
+                                            <div class="col-md-5 col-sm-6">
+                                                <p class="porce">21 porcí</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-no-margin">
+                                        <div class="serving">
+                                            <div class="col-sm-6">
+                                                <p class="price">
+                                                    1 540 Kč
+                                                </p>
+                                                <p class="price-per-serving">
+                                                    55 Kč/porce
+                                                </p>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="#" class="red-btn">Koupit fázi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4  col-ms-12 col-sm-12 no-padding">
+                                <div class="phase-box no-border-right">
+
+                                    <h4><a href="#">3. fáze Z1</a></h4>
+
+                                    <a href="#"><img src="project/images/product-photo.jpg#253x194" class="img-responsive" alt=""/></a>
+                                    <p class="phase-box-time">1 týden</p>
+                                    <div class="number-meals">
+                                        <div class="row">
+                                            <div class="col-md-7 col-sm-6 ">
+                                                <p class="meals"> 2 jídla denně</p>
+                                            </div>
+
+                                            <div class="col-md-5 col-sm-6">
+                                                <p class="porce">14 porcí</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-no-margin">
+                                        <div class="serving">
+                                            <div class="col-sm-6">
+                                                <p class="price">
+                                                    826 Kč
+                                                </p>
+                                                <p class="price-per-serving">
+                                                    59 Kč/porce
+                                                </p>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <a href="#" class="red-btn">Koupit fázi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="buy-program">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-6">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <span class="complete-price">
+                                                Zvýhodněná cena <br>
+                                                celého programu:
+                                            </span>
+                                            <img src="project/images/program-image.png" alt="">
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <p class="price">
+                                                <span>13 213 Kč</span> <br>
+                                                51 Kč/porce
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="#" class="red-btn">Koupit program</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="bmi">
+        <div class="container">
+            <div class="row">
+
+
+                <div class=" col-md-4 col-sm-12">
+                    <div class="bmi-calc-text">
+                        <h3>Online kalkulačka</h3>
+                        <p>Spočítejte si Váš dietní program</p>
+                    </div>
+                    <div class="bmi-calc">
+                        <form action="" >
+                            <div class="form-group row">
+
+
+                                <div class="col-sm-6">
+                                    <label>Pohlaví</label>
+                                    <div class="pohlavi">
+                                        <span class="gender active girl">žena</span>
+                                        <span class="gender   boy">muž</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+
+                                <div class="col-sm-6">
+                                    <label>Váš věk:</label>
+                                    <select>
+                                        <option value="" disabled selected>36 let</option>
+                                        <option>18 let</option>
+                                        <option>19 let</option>
+                                        <option>20 let</option>
+                                        <option>21 let</option>
+                                        <option>22 let</option>
+                                        <option>23 let</option>
+                                        <option>24 let</option>
+                                        <option>25 let</option>
+                                        <option>26 let</option>
+                                        <option>27 let</option>
+                                        <option>28 let</option>
+                                        <option>29 let</option>
+                                        <option>30 let</option>
+                                        <option>31 let</option>
+                                        <option>32 let</option>
+                                        <option>33 let</option>
+                                        <option>34 let</option>
+                                        <option>35 let</option>
+                                        <option>36 let</option>
+                                        <option>37 let</option>
+                                        <option>38 let</option>
+                                        <option>39 let</option>
+                                        <option>40 let</option>
+                                        <option>41 let</option>
+                                        <option>42 let</option>
+                                        <option>43 let</option>
+                                        <option>44 let</option>
+                                        <option>45 let</option>
+                                        <option>46 let</option>
+                                        <option>47 let</option>
+                                        <option>48 let</option>
+                                        <option>49 let</option>
+                                        <option>50 let</option>
+                                        <option>51 let</option>
+                                        <option>52 let</option>
+                                        <option>53 let</option>
+                                        <option>54 let</option>
+                                        <option>55 let</option>
+                                        <option>56 let</option>
+                                        <option>57 let</option>
+                                        <option>58 let</option>
+                                        <option>59 let</option>
+                                        <option>60 let</option>
+                                        <option>61 let</option>
+                                        <option>62 let</option>
+                                        <option>63 let</option>
+                                        <option>64 let</option>
+                                        <option>65 let</option>
+                                        <option>66 let</option>
+                                        <option>67 let</option>
+                                        <option>68 let</option>
+                                        <option>69 let</option>
+                                        <option>70 let</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label>Vaše výška:</label>
+                                    <select>
+                                        <option value="" disabled selected>197 cm</option>
+                                        <option>145 cm</option>
+                                        <option>146 cm</option>
+                                        <option>147 cm</option>
+                                        <option>148 cm</option>
+                                        <option>149 cm</option>
+                                        <option>150 cm</option>
+                                        <option>151 cm</option>
+                                        <option>152 cm</option>
+                                        <option>153 cm</option>
+                                        <option>154 cm</option>
+                                        <option>155 cm</option>
+                                        <option>156 cm</option>
+                                        <option>157 cm</option>
+                                        <option>158 cm</option>
+                                        <option>159 cm</option>
+                                        <option>160 cm</option>
+                                        <option>161 cm</option>
+                                        <option>162 cm</option>
+                                        <option>163 cm</option>
+                                        <option>164 cm</option>
+                                        <option>165 cm</option>
+                                        <option>166 cm</option>
+                                        <option>167 cm</option>
+                                        <option>168 cm</option>
+                                        <option>169 cm</option>
+                                        <option>170 cm</option>
+                                        <option>171 cm</option>
+                                        <option>172 cm</option>
+                                        <option>173 cm</option>
+                                        <option>174 cm</option>
+                                        <option>175 cm</option>
+                                        <option>176 cm</option>
+                                        <option>177 cm</option>
+                                        <option>178 cm</option>
+                                        <option>179 cm</option>
+                                        <option>180 cm</option>
+                                        <option>181 cm</option>
+                                        <option>182 cm</option>
+                                        <option>183 cm</option>
+                                        <option>184 cm</option>
+                                        <option>185 cm</option>
+                                        <option>186 cm</option>
+                                        <option>187 cm</option>
+                                        <option>188 cm</option>
+                                        <option>189 cm</option>
+                                        <option>190 cm</option>
+                                        <option>191 cm</option>
+                                        <option>192 cm</option>
+                                        <option>193 cm</option>
+                                        <option>194 cm</option>
+                                        <option>195 cm</option>
+                                        <option>196 cm</option>
+                                        <option>197 cm</option>
+                                        <option>198 cm</option>
+                                        <option>199 cm</option>
+                                        <option>200 cm</option>
+                                        <option>201 cm</option>
+                                        <option>202 cm</option>
+                                        <option>203 cm</option>
+                                        <option>204 cm</option>
+                                        <option>205 cm</option>
+                                        <option>206 cm</option>
+                                        <option>207 cm</option>
+                                        <option>208 cm</option>
+                                        <option>209 cm</option>
+                                        <option>210 cm</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <label>Vaše váha:</label>
+                                    <select>
+                                        <option value="" disabled selected>69 kg</option>
+                                        <option>50 kg</option>
+                                        <option>51 kg</option>
+                                        <option>52 kg</option>
+                                        <option>53 kg</option>
+                                        <option>54 kg</option>
+                                        <option>55 kg</option>
+                                        <option>56 kg</option>
+                                        <option>57 kg</option>
+                                        <option>58 kg</option>
+                                        <option>59 kg</option>
+                                        <option>60 kg</option>
+                                        <option>61 kg</option>
+                                        <option>62 kg</option>
+                                        <option>63 kg</option>
+                                        <option>64 kg</option>
+                                        <option>65 kg</option>
+                                        <option>66 kg</option>
+                                        <option>67 kg</option>
+                                        <option>68 kg</option>
+                                        <option>69 kg</option>
+                                        <option>70 kg</option>
+                                        <option>71 kg</option>
+                                        <option>72 kg</option>
+                                        <option>73 kg</option>
+                                        <option>74 kg</option>
+                                        <option>75 kg</option>
+                                        <option>76 kg</option>
+                                        <option>77 kg</option>
+                                        <option>78 kg</option>
+                                        <option>79 kg</option>
+                                        <option>80 kg</option>
+                                        <option>81 kg</option>
+                                        <option>82 kg</option>
+                                        <option>83 kg</option>
+                                        <option>84 kg</option>
+                                        <option>85 kg</option>
+                                        <option>86 kg</option>
+                                        <option>87 kg</option>
+                                        <option>88 kg</option>
+                                        <option>89 kg</option>
+                                        <option>90 kg</option>
+                                        <option>91 kg</option>
+                                        <option>92 kg</option>
+                                        <option>93 kg</option>
+                                        <option>94 kg</option>
+                                        <option>95 kg</option>
+                                        <option>96 kg</option>
+                                        <option>97 kg</option>
+                                        <option>98 kg</option>
+                                        <option>99 kg</option>
+                                        <option>100 kg</option>
+                                        <option>101 kg</option>
+                                        <option>102 kg</option>
+                                        <option>103 kg</option>
+                                        <option>104 kg</option>
+                                        <option>105 kg</option>
+                                        <option>106 kg</option>
+                                        <option>107 kg</option>
+                                        <option>108 kg</option>
+                                        <option>109 kg</option>
+                                        <option>110 kg</option>
+                                        <option>111 kg</option>
+                                        <option>112 kg</option>
+                                        <option>113 kg</option>
+                                        <option>114 kg</option>
+                                        <option>115 kg</option>
+                                        <option>116 kg</option>
+                                        <option>117 kg</option>
+                                        <option>118 kg</option>
+                                        <option>119 kg</option>
+                                        <option>120 kg</option>
+                                        <option>121 kg</option>
+                                        <option>122 kg</option>
+                                        <option>123 kg</option>
+                                        <option>124 kg</option>
+                                        <option>125 kg</option>
+                                        <option>126 kg</option>
+                                        <option>127 kg</option>
+                                        <option>128 kg</option>
+                                        <option>129 kg</option>
+                                        <option>130 kg</option>
+                                        <option>131 kg</option>
+                                        <option>132 kg</option>
+                                        <option>133 kg</option>
+                                        <option>134 kg</option>
+                                        <option>135 kg</option>
+                                        <option>136 kg</option>
+                                        <option>137 kg</option>
+                                        <option>138 kg</option>
+                                        <option>139 kg</option>
+                                        <option>140 kg</option>
+                                        <option>141 kg</option>
+                                        <option>142 kg</option>
+                                        <option>143 kg</option>
+                                        <option>144 kg</option>
+                                        <option>145 kg</option>
+                                        <option>146 kg</option>
+                                        <option>147 kg</option>
+                                        <option>148 kg</option>
+                                        <option>149 kg</option>
+                                        <option>150 kg</option>
+                                        <option>151 kg</option>
+                                        <option>152 kg</option>
+                                        <option>153 kg</option>
+                                        <option>154 kg</option>
+                                        <option>155 kg</option>
+                                        <option>156 kg</option>
+                                        <option>157 kg</option>
+                                        <option>158 kg</option>
+                                        <option>159 kg</option>
+                                        <option>160 kg</option>
+                                        <option>161 kg</option>
+                                        <option>162 kg</option>
+                                        <option>163 kg</option>
+                                        <option>164 kg</option>
+                                        <option>165 kg</option>
+                                        <option>166 kg</option>
+                                        <option>167 kg</option>
+                                        <option>168 kg</option>
+                                        <option>169 kg</option>
+                                        <option>170 kg</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label  >Váš cíl:</label>
+                                    <select>
+                                        <option value="" disabled selected>64 kg</option>
+                                        <option>45 kg</option>
+                                        <option>46 kg</option>
+                                        <option>47 kg</option>
+                                        <option>48 kg</option>
+                                        <option>49 kg</option>
+                                        <option>50 kg</option>
+                                        <option>51 kg</option>
+                                        <option>52 kg</option>
+                                        <option>53 kg</option>
+                                        <option>54 kg</option>
+                                        <option>55 kg</option>
+                                        <option>56 kg</option>
+                                        <option>57 kg</option>
+                                        <option>58 kg</option>
+                                        <option>59 kg</option>
+                                        <option>60 kg</option>
+                                        <option>61 kg</option>
+                                        <option>62 kg</option>
+                                        <option>63 kg</option>
+                                        <option>64 kg</option>
+                                        <option>65 kg</option>
+                                        <option>66 kg</option>
+                                        <option>67 kg</option>
+                                        <option>68 kg</option>
+                                        <option>69 kg</option>
+                                        <option>70 kg</option>
+                                        <option>71 kg</option>
+                                        <option>72 kg</option>
+                                        <option>73 kg</option>
+                                        <option>74 kg</option>
+                                        <option>75 kg</option>
+                                        <option>76 kg</option>
+                                        <option>77 kg</option>
+                                        <option>78 kg</option>
+                                        <option>79 kg</option>
+                                        <option>80 kg</option>
+                                        <option>81 kg</option>
+                                        <option>82 kg</option>
+                                        <option>83 kg</option>
+                                        <option>84 kg</option>
+                                        <option>85 kg</option>
+                                        <option>86 kg</option>
+                                        <option>87 kg</option>
+                                        <option>88 kg</option>
+                                        <option>89 kg</option>
+                                        <option>90 kg</option>
+                                        <option>91 kg</option>
+                                        <option>92 kg</option>
+                                        <option>93 kg</option>
+                                        <option>94 kg</option>
+                                        <option>95 kg</option>
+                                        <option>96 kg</option>
+                                        <option>97 kg</option>
+                                        <option>98 kg</option>
+                                        <option>99 kg</option>
+                                        <option>100 kg</option>
+                                        <option>101 kg</option>
+                                        <option>102 kg</option>
+                                        <option>103 kg</option>
+                                        <option>104 kg</option>
+                                        <option>105 kg</option>
+                                        <option>106 kg</option>
+                                        <option>107 kg</option>
+                                        <option>108 kg</option>
+                                        <option>109 kg</option>
+                                        <option>110 kg</option>
+                                        <option>111 kg</option>
+                                        <option>112 kg</option>
+                                        <option>113 kg</option>
+                                        <option>114 kg</option>
+                                        <option>115 kg</option>
+                                        <option>116 kg</option>
+                                        <option>117 kg</option>
+                                        <option>118 kg</option>
+                                        <option>119 kg</option>
+                                        <option>120 kg</option>
+                                        <option>121 kg</option>
+                                        <option>122 kg</option>
+                                        <option>123 kg</option>
+                                        <option>124 kg</option>
+                                        <option>125 kg</option>
+                                        <option>126 kg</option>
+                                        <option>127 kg</option>
+                                        <option>128 kg</option>
+                                        <option>129 kg</option>
+                                        <option>130 kg</option>
+                                        <option>131 kg</option>
+                                        <option>132 kg</option>
+                                        <option>133 kg</option>
+                                        <option>134 kg</option>
+                                        <option>135 kg</option>
+                                        <option>136 kg</option>
+                                        <option>137 kg</option>
+                                        <option>138 kg</option>
+                                        <option>139 kg</option>
+                                        <option>140 kg</option>
+                                        <option>141 kg</option>
+                                        <option>142 kg</option>
+                                        <option>143 kg</option>
+                                        <option>144 kg</option>
+                                        <option>145 kg</option>
+                                        <option>146 kg</option>
+                                        <option>147 kg</option>
+                                        <option>148 kg</option>
+                                        <option>149 kg</option>
+                                        <option>150 kg</option>
+                                    </select>
+                                </div>
+
+
+
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-7 col-sm-8">
+                                    <input type="submit" class="input" value="Spočítat program"/>
+                                </div>
+                            </div>
+
+
+                        </form>
+
+                        <div style="display: none">
+                            <h4 class="result-title">Vaše výsledky:</h4>
+                            <p class="result-text">
+                                <span>Vaše BMI je:</span> <br/>
+                                29.4 nadváha
+                            </p>
+
+                            <p class="result-text">
+                                <span>Vaše ideální váha je:</span> <br/>
+                                <strong>Méně než 71 kg</strong>
+                            </p>
+                            <p class="recommend-text">
+                                <span>Doporučujeme:</span><br>
+                                <u>Program PRODIETIX Z4</u>
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12 col-sm-7">
+                                    <input type="submit" class="input" value="Zobrazit program"/>
+                                </div>
+                                <div class="col-lg-5 col-md-12 col-sm-5">
+                                    <a href="#" class="btn-again">spočítat znovu</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <img src="project/images/bmi-calculator-weight-ok.png" class="img-responsive hidden-xs" alt=""/>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+<footer>
+    <div class="trust-us">
+        <h2 class="trust-us-title">nám můžete důvěřovat</h2>
+
+        <a href="#" class="trust-us-item">
+            <img src="project/images/iso-logo.png" alt="">
+        </a>
+        <a href="#" class="trust-us-item">
+            <img src="project/images/ppl-logo.png" alt="">
+        </a>
+        <a href="#" class="trust-us-item">
+            <img src="project/images/heureka-logo.png" alt="">
+        </a>
+        <a href="#" class="trust-us-item">
+            <img src="project/images/visa-logo.png" alt="">
+        </a>
+        <a href="#" class="trust-us-item">
+            <img src="project/images/mastercard-logo.png" alt="">
+        </a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-ms-6">
+                <h6>O projektu</h6>
+
+                <ul>
+                    <li><a href="#">O Prodietix dietě</a></li>
+                    <li><a href="#">Online kalkulačka</a></li>
+                    <li><a href="#">Naši zákazníci</a></li>
+                    <li><a href="#">Poradna</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-3 col-ms-6">
+                <h6>O nákupu</h6>
+
+                <ul>
+                    <li><a href="#">Sestavování jídelníčku</a></li>
+                    <li><a href="#">Vrátíme peníze za příběh</a></li>
+                    <li><a href="#">Garance spokojenosti</a></li>
+                    <li><a href="#">Možnosti dopravy</a></li>
+                    <li><a href="#">Možnosti platby</a></li>
+                    <li><a href="#">Obchodní podmínky</a></li>
+                </ul>
+            </div>
+
+            <div class="clearfix visible-xs"></div>
+
+            <div class="col-md-offset-1 col-md-5 col-sm-6 col-ms-12 ">
+                <div class="footer-facebook text-right hidden-xs">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprodietix%2F&tabs&width=340&height=128&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="128" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+                <div class="footer-facebook  visible-xs">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprodietix%2F&tabs&width=340&height=128&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="128" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="posudek">
+                        Informace na těchto stránkách nenahrazují v žádném případě odborný lékařský posudek <br>
+                        Výsledky Prodietix diety se mohou lišit a jsou závislé na individuálních dispozicích zákazníků.
+                    </p>
+                </div>
+                <div class="col-md-6">
+
+                    <p>
+                        © Prodietix.cz 2016
+                    </p>
+                </div>
+                <div class="col-md-6 min-md-text-right">
+                    <p>
+                        Created by <a href="http://www.artweby.cz" title="Tvorba webových stránek a e-shopů">ArtWeby</a> | Powered by <a href="http://www.artfocus.cz/tvorba-www-stranek/vytvoreni-webovych-stranek-webdesign.html" title="Redakční systém ArtCMS">ArtCMS </a>
+                        | Design by <a href="#">Zlatý:digi</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
